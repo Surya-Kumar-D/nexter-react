@@ -9,7 +9,9 @@ function App() {
           <svg className="feature__icon">
             <use href="/img/sprite.svg#icon-global"></use>
           </svg>
-          <h4 className="heading-4">World's best luxury homes</h4>
+          <h4 className="heading-4 heading-4--dark">
+            World's best luxury homes
+          </h4>
           <p className="feature__text">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
             distinctio necessitatibus pariatur voluptatibus.
@@ -19,7 +21,9 @@ function App() {
           <svg className="feature__icon">
             <use href="/img/sprite.svg#icon-trophy"></use>
           </svg>
-          <h4 className="heading-4">Only the best Properties</h4>
+          <h4 className="heading-4 heading-4--dark">
+            Only the best Properties
+          </h4>
           <p className="feature__text">
             Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus
             rerum sed a eligendi aut quia.
@@ -29,7 +33,9 @@ function App() {
           <svg className="feature__icon">
             <use href="/img/sprite.svg#icon-map-pin"></use>
           </svg>
-          <h4 className="heading-4">All homes in top locations</h4>
+          <h4 className="heading-4 heading-4--dark">
+            All homes in top locations
+          </h4>
           <p className="feature__text">
             Tenetur distinctio necessitatibus pariatur voluptatibus quidem
             consequatur harum.
@@ -39,7 +45,7 @@ function App() {
           <svg className="feature__icon">
             <use href="/img/sprite.svg#icon-key"></use>
           </svg>
-          <h4 className="heading-4">New home in one week</h4>
+          <h4 className="heading-4 heading-4--dark">New home in one week</h4>
           <p className="feature__text">
             Vero ipsum sapiente molestias accusamus rerum. Lorem, ipsum dolor
             sit amet consectetur adipisicing elit.
@@ -49,7 +55,7 @@ function App() {
           <svg className="feature__icon">
             <use href="/img/sprite.svg#icon-presentation"></use>
           </svg>
-          <h4 className="heading-4">Top 1% realtors</h4>
+          <h4 className="heading-4 heading-4--dark">Top 1% realtors</h4>
           <p className="feature__text">
             Quidem consequatur harum, voluptatum mollitia quae. Tenetur
             distinctio necessitatibus pariatur voluptatibus.
@@ -59,7 +65,9 @@ function App() {
           <svg className="feature__icon">
             <use href="/img/sprite.svg#icon-lock"></use>
           </svg>
-          <h4 className="heading-4">Secure payments on nextor</h4>
+          <h4 className="heading-4 heading-4--dark">
+            Secure payments on nextor
+          </h4>
           <p className="feature__text">
             Pariatur voluptatibus quidem consequatur harum, voluptatum mollitia
             quae.
