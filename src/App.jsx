@@ -10,7 +10,7 @@ function App() {
             <use href="/img/sprite.svg#icon-global"></use>
           </svg>
           <h4 className="heading-4 heading-4--dark">
-            World's best luxury homes
+            World&apos;s best luxury homes
           </h4>
           <p className="feature__text">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
@@ -74,8 +74,30 @@ function App() {
           </p>
         </div>
       </section>
-      <div className="story__pictures">Story pictures</div>
-      <div className="story__content">Story content</div>
+      <div className="story__pictures">
+        <img
+          src="/img/story-1.jpeg"
+          alt="Couple with new house"
+          className="story__img--1"
+        />
+        <img
+          src="/img/story-2.jpeg"
+          alt="Couple with new house"
+          className="story__img--2"
+        />
+      </div>
+      <div className="story__content">
+        <h3 className="heading-3 mb-sm">Happy Customers</h3>
+        <h2 className="heading-2 heading-2--dark mb-md">
+          &ldquo;The best decision of our life&rdquo;
+        </h2>
+        <p className="story__text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+          distinctio necessitatibus pariatur voluptatibus. Quidem consequatur
+          harum volupta!
+        </p>
+        <button className="btn">Find your own world</button>
+      </div>
       <section className="homes">Homes</section>
       <section className="gallery">Gallery</section>
       <footer className="footer">Footer</footer>
