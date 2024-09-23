@@ -1,3 +1,67 @@
+/* eslint-disable react/prop-types */
+let HomeCards = [
+  {
+    src: "img/house-1.jpeg",
+    alt: "Home 1",
+    HomeName: "Beautiful Family House",
+    countryName: "USA",
+    className: "home__img",
+    rooms: "5 rooms",
+    meters: "325 m²",
+    price: "$100,000",
+  },
+  {
+    src: "img/house-2.jpeg",
+    alt: "Home 2",
+    HomeName: "Modern Glass Villa",
+    countryName: "Canada",
+    className: "home__img",
+    rooms: "6 rooms",
+    meters: "450 m²",
+    price: "$2,750,000",
+  },
+  {
+    src: "img/house-3.jpeg",
+    alt: "Home 3",
+    HomeName: "Cozy Country House",
+    countryName: "UK",
+    className: "home__img",
+    rooms: "4 rooms",
+    meters: "250 m²",
+    price: "$8,50,000",
+  },
+  {
+    src: "img/house-4.jpeg",
+    alt: "Home 4",
+    HomeName: "Large Rustical Villa",
+    countryName: "Portugal",
+    className: "home__img",
+    rooms: "6 rooms",
+    meters: "400 m²",
+    price: "$1,950,000",
+  },
+  {
+    src: "img/house-5.jpeg",
+    alt: "Home 5",
+    HomeName: "Majestic Palace House",
+    countryName: "Germany",
+    className: "home__img",
+    rooms: "18 rooms",
+    meters: "4230 m²",
+    price: "$9,500,000",
+  },
+  {
+    src: "img/house-6.jpeg",
+    alt: "Home 6",
+    HomeName: "MOdern Famuily Apartment",
+    countryName: "Italy",
+    className: "home__img",
+    rooms: "3 rooms",
+    meters: "180 m²",
+    price: "$600,000",
+  },
+];
+
 function App() {
   return (
     <div className="container">
@@ -98,9 +162,61 @@ function App() {
         </p>
         <button className="btn">Find your own world</button>
       </div>
-      <section className="homes">Homes</section>
+      <section className="homes">
+        {HomeCards.map((homeCard, index) => {
+          return (
+            <Homes
+              key={index}
+              src={homeCard.src}
+              alt={homeCard.alt}
+              HomeName={homeCard.HomeName}
+              countryName={homeCard.countryName}
+              rooms={homeCard.rooms}
+              meters={homeCard.meters}
+              price={homeCard.price}
+            />
+          );
+        })}
+      </section>
       <section className="gallery">Gallery</section>
       <footer className="footer">Footer</footer>
+    </div>
+  );
+}
+
+function Homes({ src, alt, HomeName, countryName, rooms, meters, price }) {
+  return (
+    <div className="home">
+      <img src={src} alt={alt} className="home__img" />
+      <svg className="home__like">
+        <use href="/img/sprite.svg#icon-heart-full"></use>{" "}
+      </svg>
+      <h5 className="home__name">{HomeName}</h5>
+      <div className="home__location">
+        <svg>
+          <use href="/img/sprite.svg#icon-map-pin"></use>
+        </svg>
+        <p>{countryName}</p>
+      </div>
+      <div className="home__rooms">
+        <svg>
+          <use href="/img/sprite.svg#icon-profile-male"></use>
+        </svg>
+        <p>{rooms}</p>
+      </div>
+      <div className="home__area">
+        <svg>
+          <use href="/img/sprite.svg#icon-expand"></use>
+        </svg>
+        <p>{meters}</p>
+      </div>
+      <div className="home__price">
+        <svg>
+          <use href="/img/sprite.svg#icon-key"></use>
+        </svg>
+        <p>{price}</p>
+      </div>
+      <button className="btn home__btn">Contact realtor</button>
     </div>
   );
 }
