@@ -65,7 +65,9 @@ let HomeCards = [
 function App() {
   return (
     <div className="container">
-      <div className="sidebar">Sidebar</div>
+      <div className="sidebar">
+        <button className="nav-btn"></button>
+      </div>
       <header className="header">Header</header>
       <div className="realtors">Top 3 realtors</div>
       <section className="features">
@@ -242,7 +244,44 @@ function App() {
           />
         </figure>
       </section>
-      g<footer className="footer">Footer</footer>
+      g
+      <footer className="footer">
+        <ul className="nav">
+          <li className="nav__item">
+            <a href="#" className="nav__link">
+              Find your dream home
+            </a>
+          </li>
+          <li className="nav__item">
+            <a href="#" className="nav__link">
+              Request Proposal
+            </a>
+          </li>
+          <li className="nav__item">
+            <a href="#" className="nav__link">
+              Download home planner
+            </a>
+          </li>
+          <li className="nav__item">
+            <a href="#" className="nav__link">
+              Contact us
+            </a>
+          </li>
+          <li className="nav__item">
+            <a href="#" className="nav__link">
+              Submit your property
+            </a>
+          </li>
+          <li className="nav__item">
+            <a href="#" className="nav__link">
+              Come work with us
+            </a>
+          </li>
+        </ul>
+        <p className="copyright">
+          &copy; Copyright 2024 Nexter. All rights reserved.
+        </p>
+      </footer>
     </div>
   );
 }
