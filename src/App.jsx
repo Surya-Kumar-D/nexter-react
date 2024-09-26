@@ -68,8 +68,51 @@ function App() {
       <div className="sidebar">
         <button className="nav-btn"></button>
       </div>
-      <header className="header">Header</header>
-      <div className="realtors">Top 3 realtors</div>
+      <header className="header">
+        <img src="/img/logo.png" alt="Nexter logo" className="header__logo" />
+        <h3 className="heading-3">Your own home:</h3>
+        <h1 className="heading-1">The ulitimate Personal home</h1>
+        <button className="btn header__btn">View our properties</button>
+        <div className="header__seenon-text">Seen on</div>
+        <div className="header__seenon-logos">
+          <img src="img/logo-bbc.png" alt="BB logo" />
+          <img src="/img/logo-forbes.png" alt="Forbes logo" />
+          <img src="/img/logo-techcrunch.png" alt="Techcrunch logo" />
+          <img src="/img/logo-bi.png" alt="Bi logo" />
+        </div>
+      </header>
+      <div className="realtors">
+        <h3 className="heading-3">Top 3 realtors</h3>
+        <div className="realtors__list">
+          <img
+            src="/img/realtor-1.jpeg"
+            alt="Realtor 1"
+            className="realtors__img"
+          />
+          <div className="realtors__details">
+            <h4 className="heading-4 heading-4--light">Eri Feiman</h4>
+            <p className="realtors__sold">245 houses sold</p>
+          </div>
+          <img
+            src="/img/realtor-2.jpeg"
+            alt="Realtor 2"
+            className="realtors__img"
+          />
+          <div className="realtors__details">
+            <h4 className="heading-4 heading-4--light">Kim Brown</h4>
+            <p className="realtors__sold">212 houses sold</p>
+          </div>
+          <img
+            src="/img/realtor-3.jpeg"
+            alt="Realtor 3"
+            className="realtors__img"
+          />
+          <div className="realtors__details">
+            <h4 className="heading-4 heading-4--light">Toby Ramsey</h4>
+            <p className="realtors__sold">198 houses sold</p>
+          </div>
+        </div>
+      </div>
       <section className="features">
         <div className="feature">
           <svg className="feature__icon">
